@@ -1,0 +1,24 @@
+modLoader="neoforge"
+loaderVersion="[1.0, )"
+license="MIT"
+
+[[mods]]
+modId="biglittlefixes"
+version="1.0.0"
+displayName="Big Little Fixes"
+description='A lightweight NeoForge 1.20.1 QoL mod that provides a collection of small, careful builder-focused quality-of-life fixes.'
+authors="Bulkley"
+credits=""
+logoFile=""
+displayURL=""
+issueTrackerURL=""
+updateJSONURL=""
+
+# Optional dependencies can be added here in the future
+
+[[dependencies.biglittlefixes]]
+# Example: dependency of another mod (format: modId, mandatory, version range)
+#[[dependencies.biglittlefixes.MODID]]
+#mandatory=false
+#versionRange="[1.0, )"
+#ordering="AFTER"
