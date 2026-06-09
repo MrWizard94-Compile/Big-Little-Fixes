@@ -1,13 +1,16 @@
 package com.mrwizard94.biglittlefixes;
 
 import com.mojang.logging.LogUtils;
-import net.minecraftforge.api.distmarker.Dist;
+import com.mrwizard94.biglittlefixes.config.BigLittleFixesConfig;
+import com.mrwizard94.biglittlefixes.events.ClientEvents;
+import com.mrwizard94.biglittlefixes.events.CommonEvents;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 /**
@@ -20,9 +23,13 @@ public final class BigLittleFixes {
     public static final String MODID = "biglittlefixes";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public BigLittleFixes() {
-        // Register non-mod-lifecycle listeners on the Forge event bus
+    public BigLittleFixes(final FMLJavaModLoadingContext context) {
+        context.registerConfig(ModConfig.Type.COMMON, BigLittleFixesConfig.SPEC, "biglittlefixes-common.toml");
+
+        // Register shared infrastructure listeners.
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(CommonEvents.class);
+        MinecraftForge.EVENT_BUS.register(ClientEvents.class);
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -36,14 +43,5 @@ public final class BigLittleFixes {
     @SubscribeEvent
     public void onServerStarting(final ServerStartingEvent event) {
         LOGGER.info("Big Little Fixes server starting");
-    }
-
-    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static final class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetupEvent(final FMLClientSetupEvent event) {
-            // no-op; kept for future client-specific initialization
-            LOGGER.debug("ClientModEvents onClientSetupEvent fired");
-        }
     }
 }
