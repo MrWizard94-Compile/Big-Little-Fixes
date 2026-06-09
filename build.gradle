@@ -6,7 +6,7 @@ plugins {
 }
 
 // Project coordinates come from gradle.properties
-group = project.findProperty('mavenGroup') ?: 'com.bulkley'
+group = project.findProperty('mavenGroup') ?: 'com.mrwizard94'
 version = project.findProperty('modVersion') ?: '1.0.0'
 archivesBaseName = project.findProperty('archivesBaseName') ?: 'biglittlefixes'
 
@@ -96,7 +96,7 @@ tasks.jar {
         attributes(
             'Implementation-Title': (project.findProperty('modName') ?: 'Big Little Fixes'),
             'Implementation-Version': project.version,
-            'Implementation-Vendor': (project.findProperty('modGroup') ?: 'com.bulkley')
+            'Implementation-Vendor': (project.findProperty('modGroup') ?: 'MrWizard94')
         )
     }
 }

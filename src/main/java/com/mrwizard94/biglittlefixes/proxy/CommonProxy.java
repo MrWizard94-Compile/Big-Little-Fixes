@@ -1,4 +1,4 @@
-package com.bulkley.biglittlefixes.proxy;
+package com.mrwizard94.biglittlefixes.proxy;
 
 /** Common-side proxy for Big Little Fixes. Keep responsibilities minimal for skeleton. */
 public class CommonProxy {

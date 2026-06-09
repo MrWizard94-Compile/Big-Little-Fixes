@@ -1,4 +1,4 @@
-package com.bulkley.biglittlefixes.config;
+package com.mrwizard94.biglittlefixes.config;
 
 import java.io.IOException;
 import java.io.InputStream;

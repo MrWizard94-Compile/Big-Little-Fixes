@@ -1,4 +1,4 @@
-package com.bulkley.biglittlefixes.proxy;
+package com.mrwizard94.biglittlefixes.proxy;
 
 /** Client-side proxy; extends CommonProxy for future client-only logic. */
 public final class ClientProxy extends CommonProxy {

@@ -1,4 +1,4 @@
-package com.bulkley.biglittlefixes.events;
+package com.mrwizard94.biglittlefixes.events;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 

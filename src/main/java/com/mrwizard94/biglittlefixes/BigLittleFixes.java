@@ -1,4 +1,4 @@
-package com.bulkley.biglittlefixes;
+package com.mrwizard94.biglittlefixes;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.bulkley.biglittlefixes.events.Events;
+import com.mrwizard94.biglittlefixes.events.Events;
 
 /**
  * Big Little Fixes mod main class. Provides mod initialization and event registration.
