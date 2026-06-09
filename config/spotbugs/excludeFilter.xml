@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <!-- Exclude MDK example package findings so quality gates target project code only -->
+    <Match>
+        <Package name="~com\.example\..*"/>
+    </Match>
+</FindBugsFilter>

@@ -1,0 +1,31 @@
+# This is the mods.toml for Big Little Fixes (Forge 1.20.1)
+# Format: TOML v0.5.0
+
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="biglittlefixes"
+version="1.0.0"
+displayName="Big Little Fixes"
+#logoFile="assets/biglittlefixes/logo.png"
+authors="MrWizard94"
+
+# The description text for the mod (multi line!)
+description='''Lightweight QoL tweaks for Minecraft 1.20.1.
+Small, well-tested fixes that improve usability without changing core gameplay.'''
+
+[[dependencies.biglittlefixes]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.biglittlefixes]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
