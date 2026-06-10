@@ -28,8 +28,8 @@ public final class BigLittleFixes {
 
         // Register shared infrastructure listeners.
         MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.register(CommonEvents.class);
-        MinecraftForge.EVENT_BUS.register(ClientEvents.class);
+        //MinecraftForge.EVENT_BUS.register(CommonEvents.class);
+        //MinecraftForge.EVENT_BUS.register(ClientEvents.class);
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
