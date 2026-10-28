@@ -1,0 +1,55 @@
+{
+  "parent": "minecraft:block/template_hanging_lantern",
+  "textures": {
+    "lantern": "minecraft:block/lantern"
+  },
+  "display": {
+    "fixed": {
+      "translation": [0, 8, 0]
+    }
+  },
+  "elements": [
+    {
+      "from": [5, 9, 5],
+      "to": [11, 16, 11],
+      "faces": {
+        "north": { "uv": [0, 2, 6, 9], "texture": "#lantern" },
+        "east":  { "uv": [0, 2, 6, 9], "texture": "#lantern" },
+        "south": { "uv": [0, 2, 6, 9], "texture": "#lantern" },
+        "west":  { "uv": [0, 2, 6, 9], "texture": "#lantern" },
+        "up":    { "uv": [0, 9, 6, 15], "texture": "#lantern" },
+        "down":  { "uv": [0, 9, 6, 15], "texture": "#lantern" }
+      }
+    },
+    {
+      "from": [6, 16, 6],
+      "to": [10, 17, 10],
+      "faces": {
+        "north": { "uv": [1, 0, 5, 1], "texture": "#lantern" },
+        "east":  { "uv": [1, 0, 5, 1], "texture": "#lantern" },
+        "south": { "uv": [1, 0, 5, 1], "texture": "#lantern" },
+        "west":  { "uv": [1, 0, 5, 1], "texture": "#lantern" },
+        "up":    { "uv": [1, 10, 5, 14], "texture": "#lantern" },
+        "down":  { "uv": [1, 10, 5, 14], "texture": "#lantern" }
+      }
+    },
+    {
+      "from": [6.5, 17, 8],
+      "to": [9.5, 22, 8],
+      "rotation": { "origin": [8, 8, 8], "axis": "y", "angle": 45, "rescale": true },
+      "faces": {
+        "north": { "uv": [14, 1, 11, 6], "texture": "#lantern" },
+        "south": { "uv": [11, 1, 14, 6], "texture": "#lantern" }
+      }
+    },
+    {
+      "from": [8, 17, 6.5],
+      "to": [8, 22, 9.5],
+      "rotation": { "origin": [8, 8, 8], "axis": "y", "angle": 45, "rescale": true },
+      "faces": {
+        "west": { "uv": [14, 1, 11, 6], "texture": "#lantern" },
+        "east": { "uv": [11, 1, 14, 6], "texture": "#lantern" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "biglittlefixes:block/lantern_hanging_on_slab",
+  "textures": {
+    "lantern": "minecraft:block/soul_lantern",
+    "particle": "minecraft:block/soul_lantern"
+  }
+}

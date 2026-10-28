@@ -29,3 +29,6 @@ Small, well-tested fixes that improve usability without changing core gameplay.'
     versionRange="[1.20.1,1.21)"
     ordering="NONE"
     side="BOTH"
+
+[[mixins]]
+config="biglittlefixes.mixins.json"

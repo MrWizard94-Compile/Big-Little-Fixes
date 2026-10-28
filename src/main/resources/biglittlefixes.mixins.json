@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mrwizard94.biglittlefixes.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "biglittlefixes.refmap.json",
+  "mixins": [
+    "SlabSupportFaceMixin",
+    "BlockBehaviourShapeOffsetMixin",
+    "TorchBlockParticleMixin",
+    "RedstoneTorchParticleMixin"
+  ],
+  "client": [
+    "client.BlockRenderDispatcherSlabOffsetMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
